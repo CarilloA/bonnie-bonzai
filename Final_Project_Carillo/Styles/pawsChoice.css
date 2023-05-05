@@ -1,0 +1,603 @@
+*{
+	font-family: arial, helvetica, sans-serif;
+	font-style: normal;
+}
+
+footer{
+	color: #04b5a0;
+	font-weight: bold;
+}
+
+/* >>>>> index.html CSS <<<<< */
+
+#tagL{
+	color: #24E1CA;
+	text-align: center; 
+	margin:0;
+}
+
+/* >>>>> NAVIGATION BAR <<<<<*/
+
+.navbar {
+	overflow: hidden;
+	background-color: #24E1CA;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	font-size: 16px;
+	font-style: normal;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#dChoice{
+	background-color: #02a88f;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit; /* for vertical align on mobile phones */
+	margin: 0; /* for vertical align on mobile phones */
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+	background-color: black;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a{
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover{
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+
+.account{
+	float: right;
+	background-color: #24E1CA;
+}
+
+/* >>>>> INDEX IMAGE OVERLAY CSS <<<<< */
+
+.homePageImg{
+	position: relative;
+	display: block;
+}
+
+.img{
+	display: block;
+	width: 100%;
+	height: 500px;
+	opacity: 1;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 37%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #008CBA;
+	margin-left: 1%;
+}
+
+.homePageImg:hover .overlay{
+	opacity: 0.83;
+}
+
+.text{
+	color: white;
+	font-size: 60px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+#img2{
+	transform: scaleX(-1);
+}
+
+.overlay2{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 34%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #008CBA;
+	margin-left: 1%;
+}
+
+.homePageImg:hover .overlay2{
+	opacity: 0.83;
+}
+
+.text2{
+	text-align: left;
+	color: white;
+	font-size: 38px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	right: -15%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+/*
+.overlay3{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 34%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #008CBA;
+	margin-left: 65%;
+}
+
+.homePageImg:hover .overlay3{
+	opacity: 0.83;
+}
+
+.text3{
+	text-align: left;
+	color: white;
+	font-size: 38px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	right: -15%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}*/
+
+/* >>>>> INDEX IMAGE FLIP <<<<< */
+
+.img3{
+	display: block;
+	width: 100%;
+	height: 500px;
+}
+
+.text3{
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	right: -15%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.imgFlip {
+  background-color: transparent;
+  width: 100%;
+  height: 500px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.imgFlipIn {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.imgFlip:hover .imgFlipIn {
+  transform: rotateY(180deg);
+}
+
+.imgFlipFront, .imgFlipBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.imgFlipBack {
+  background-color: #008CBA;
+ /* color: white;*/
+  transform: rotateY(180deg);
+}
+
+
+/* >>>>> dogFood.html CSS <<<<< */
+
+#dogFood{
+	overflow: auto;
+	background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+}
+
+.dogFoodTitle{
+	text-align: center;
+	font-size: 35px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	color: #04b5a0;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.dogFoodGallery img{
+	width: 100%;
+	height: 250px;
+}
+
+.desc{
+	text-align: center;
+	font-style: normal;
+	padding-top: 5px;
+}
+
+.price{
+	color: #fae207;
+	font-weight: bold;
+}
+
+.gallery{
+	display: inline-table;
+	padding: 2px;
+	border: 1px solid black;
+	border-radius: 0 0 50px 50px;
+	width: 15%;
+	background-color: gray;
+	color: white;
+	margin-left: 1.537%;
+	box-shadow: 10px 7px 14px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* RATING */
+
+.rating {
+	margin-right: 25px;
+    padding: 0 10px;
+	border: hidden;
+}
+.rating:not(:checked) > input {
+    position:absolute;
+	display: none;
+}
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+	font-size: 30px;
+    line-height:1.2;
+    color:#ccc;
+}
+.rating:not(:checked) > label:before {
+    content: &#9733;
+}
+.rating > input:checked ~ label {
+	color: #fad816;
+}
+.rating:not(:checked) > label:hover, 
+.rating:not(:checked) > label:hover ~ label {
+	color: #deb217;
+}
+.rating> input:checked + label:hover, 
+.rating> input:checked + label:hover ~ label, 
+.rating> input:checked ~ label:hover, 
+.rating> input:checked ~ label:hover ~ label, 
+.rating> label:hover ~ input:checked ~ label {
+	color: #c59b08;
+}
+
+/* DOG FOOD GALLERY OVERLAY */
+
+.gallery{
+	position: relative;
+}
+
+.dogFoodImg{
+	display: block;
+	width: 100%;
+	opacity: 1;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.descOverlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 252px;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: white;
+}
+
+.overlayContainer:hover .descOverlay{
+	opacity: 1;
+	/*width: 50%;*/
+}
+
+.textOverlay{
+	color: black;
+	width: 100%;
+	font-size: 12px;
+	font-style: normal;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -23px;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+/* >>>>> REGISTRATION FORM CSS <<<<< */
+
+#mssg{
+	text-align: center;
+	font-size: 40px;
+	color: #04b5a0;
+}
+#mssg2{
+	text-align: center;
+	font-size: 15px;
+	color: #04b5a0;
+	margin-top: -35px;
+}
+
+.acctPage{
+	width: 35%;
+	border: 1px solid #04b5a0;
+	border-radius: 30% 0;
+	margin: auto;
+	margin-top: 1%;
+	font-style: normal;
+	display: block;
+}
+
+#regTitle{
+	font-size: 30px;
+	color: #04b5a0;
+	font-weight: bold;
+	text-align:center;
+}
+
+.acctForm{
+	margin-left: 5%;
+	padding-top: 5%;
+	padding-bottom: 2%;
+	padding-left: 5%;
+}
+
+#nameTitle{
+	font-size: 105%;
+	font-weight: bold;
+	margin-bottom: -0.05%;
+}
+#Name{
+	display: inline-block;
+	width: 38.5%;
+}
+
+.acctForm label{
+	font-weight: bold;
+}
+.acctForm ::placeholder{
+	font-size: 105%;
+	text-align: center;
+	color: white;
+}
+	
+.acctForm input{
+	font-size: 105%;
+	border: 1px solid #24E1CA;
+	border-radius: 10px;
+	background-color: #04b5a0;
+	width: 85%;
+	padding: 3%;
+	color: white;
+}
+
+input[type=text]:focus, 
+input[type=email]:focus, 
+input[type=password]:focus {
+	background-color: #8dfcec;
+	color: black;
+	outline: none;
+}
+
+hr{
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+	margin-left: -22px;
+	width: 100%;
+}
+
+.registerbtn{
+	text-align: center;
+	background-color: #24E1CA;
+	color: black;
+	padding: none;
+	font-size: 20px;
+	width: 40%;
+	border-radius: 30px;
+	cursor: pointer;
+	opacity: 0.9;
+}
+
+.registerbtn:hover{
+	opacity: 1;
+	background-color: #8dfcec;
+}
+
+/* >>>>> CONFIRMATION MSSG CSS <<<<< */
+
+.confirmPage{
+	margin-top: 10%;
+	margin-left: 15%;
+	align-items: center;
+	border: 7px outset #BCC6CC;
+	border-radius: 30% -50% 5% -15;
+	width: 70%;
+	padding-bottom: 5px;
+}
+
+#mssg{
+	font-size: 60px;
+	align-items: center;
+}
+
+#mssg2{
+	font-size: 30px;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+#homeBttn{
+	text-align: center;
+	font-size: 20px;
+	background-color: #757575;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #8D918D;
+	border-radius: 30px;
+	margin-left: 45%;
+	cursor: pointer;
+	opacity: 0.9;
+	text-decoration: none;
+	box-shadow: 0 0 0 1px #163772; 
+}
+
+#homeBttn:hover{
+	opacity: 1;
+	background-color: #BCC6CC;
+	color: black;
+}
+
+/* >>>>> gallery.html CSS <<<<< */
+
+#galleryContent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#galleryContent h1 {
+	color: #02a88f;
+}
+
+.galContainer{
+	columns: 5 200px;
+	column-gap: 1.5rem;
+	width: 90%;
+	margin: 0 auto;
+}
+  
+.galContainer div{
+    width: 100%;
+    margin: 0 0.5rem 0.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: 2px solid #02a88f;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    transition: all .25s ease-in-out;
+}
+
+.galContainer div:hover img{
+    filter: grayscale(0);}
+}
+
+.galContainer div:hover{
+    border-color: #24E1CA;	
+}
+
+.galContainer div img{
+    width: 100%;
+    filter: grayscale(100%);
+    border-radius: 5px;
+    transition: all .25s ease-in-out;
+}
+
+.galContainer div p{
+    margin: 5px 0;
+    padding: 0;
+    text-align: center;
+    font-style: italic;
+}
+
+/* >>>>> reference.html CSS <<<<< */
+
+#referenceContainer{
+	margin-left: 3%;
+}
+
+.refTitle{
+	font-weight: bold;
+	font-size: 30px;
+	color: #04b5a0; 
+}
+
+.sortReference{
+	line-height: 2;
+	color: #0b876c;
+}
+
+.sortReference a{
+	color: #0b876c;
+}
+
+.sortReference a:hover{
+	color: red;
+}
